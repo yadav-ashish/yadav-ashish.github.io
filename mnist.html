@@ -24,6 +24,11 @@
         font-size: 70px;
         text-align: center;
       }
+      h2 {
+        margin: 40px;
+        font-size: 40px;
+        text-align: center;
+      }
       #paint {
         border:3px solid red;
         margin: auto;
@@ -46,6 +51,13 @@
         padding: 30px;
         text-align: center;
       }
+      .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -53,6 +65,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js"></script>
     <h1>Digit Recognition WebApp</h1>
+    <h2>Draw a digit inside the box</h2>
     <div id="paint">
       <canvas id="myCanvas"></canvas>
     </div>
@@ -169,5 +182,8 @@
       $('#number').html('');
     });
     </script>
+    <div class="footer">
+      Src: https://towardsdatascience.com/deploying-a-simple-machine-learning-model-into-a-webapp-using-tensorflow-js-3609c297fb04
+    </footer>
   </body>
 </html>
